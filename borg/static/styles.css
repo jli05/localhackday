@@ -1,0 +1,140 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9f5ff; /* Light blue background */
+}
+
+header {
+    background: #007bff; /* Bright blue */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffdd57; /* Yellow on hover */
+}
+
+main {
+    padding: 40px 10%; /* Wider margins */
+}
+
+section#news {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+article {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+article:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+article h2 {
+    margin-top: 0;
+    color: #007bff; /* Bright blue for headings */
+}
+
+article p {
+    color: #555; /* Darker gray for text */
+}
+
+article a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #007bff; /* Border for button effect */
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded corners for button */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+article a:hover {
+    background-color: #007bff; /* Button background on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #007bff;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+}
+
+/* Styles for input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%; /* Full width */
+    padding: 10px;
+    margin: 10px 0; /* Space between inputs */
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding in width */
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #ffdd57; /* Yellow border on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Styles for labels */
+label {
+    display: block; /* Block display for labels */
+    margin: 10px 0 5px; /* Space above and below */
+    color: #333; /* Dark gray for text */
+    font-weight: bold; /* Bold text */
+}
+
+/* Styles for buttons */
+button {
+    background-color: #007bff; /* Bright blue */
+    color: #ffffff; /* White text */
+    border: none; /* No border */
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
