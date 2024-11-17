@@ -151,3 +151,9 @@ button:hover {
     background-color: #0056b3; /* Darker blue on hover */
     transform: translateY(-2px); /* Lift effect on hover */
 }
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
