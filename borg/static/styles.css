@@ -95,8 +95,7 @@ footer {
 /* Styles for input fields */
 input[type="text"],
 input[type="email"],
-input[type="password"],
-textarea {
+input[type="password"] {
     width: 100%; /* Full width */
     padding: 10px;
     margin: 10px 0; /* Space between inputs */
@@ -104,6 +103,18 @@ textarea {
     border-radius: 5px; /* Rounded corners */
     box-sizing: border-box; /* Include padding in width */
     transition: border-color 0.3s;
+}
+
+textarea {
+    width: 100%; /* Full width */
+    height: 20em;
+    padding: 10px;
+    margin: 10px 0; /* Space between inputs */
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding in width */
+    transition: border-color 0.3s;
+
 }
 
 input[type="text"]:focus,
@@ -123,6 +134,7 @@ label {
 }
 
 /* Styles for buttons */
+input[type="submit"],
 button {
     background-color: #007bff; /* Bright blue */
     color: #ffffff; /* White text */
@@ -134,6 +146,7 @@ button {
     transition: background-color 0.3s, transform 0.3s;
 }
 
+input[type="submit"]:hover,
 button:hover {
     background-color: #0056b3; /* Darker blue on hover */
     transform: translateY(-2px); /* Lift effect on hover */

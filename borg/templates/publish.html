@@ -1,0 +1,19 @@
+
+{% extends 'base.html' %}
+
+{% block main %}
+<main>
+<h2>Publish a Post</h2>
+<form method="post">
+<label for="username">Username</label>
+<input name="username" id="username" type="email" required>
+<label for="password">Password</label>
+<input name="password" id="password" type="password" required>
+<label for="title">Title</label>
+<input name="title" id="title" type="text" required>
+<label for="body">Body</label>
+<textarea name="body" id="body"></textarea>
+<input type="submit" value="Publish">
+</form>
+</main>
+{% endblock %}

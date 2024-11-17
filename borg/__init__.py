@@ -5,8 +5,9 @@ def create_app():
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_pyfile('config.py', silent=True)
 
-    from . import homepage
+    from . import homepage, publish
     app.register_blueprint(homepage.bp)
+    app.register_blueprint(publish.bp)
 
     return app
 
